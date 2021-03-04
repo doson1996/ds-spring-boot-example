@@ -1,11 +1,9 @@
-package com.ds.example.easyexcle.demo;
+package com.ds.example.easyexcel.demo;
 
 import com.alibaba.excel.EasyExcel;
-import com.alibaba.excel.ExcelWriter;
-import com.alibaba.excel.write.metadata.WriteSheet;
-import com.ds.example.easyexcle.model.DemoData;
-import com.ds.example.easyexcle.model.DemoDataList;
-import com.ds.example.easyexcle.utils.FileUtil;
+import com.ds.example.easyexcel.model.DemoData;
+import com.ds.example.easyexcel.model.DemoDataList;
+import com.ds.example.easyexcel.utils.FileUtil;
 
 import java.util.ArrayList;
 import java.util.Date;

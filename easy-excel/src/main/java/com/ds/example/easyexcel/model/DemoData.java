@@ -1,4 +1,4 @@
-package com.ds.example.easyexcle.model;
+package com.ds.example.easyexcel.model;
 
 import com.alibaba.excel.annotation.ExcelProperty;
 

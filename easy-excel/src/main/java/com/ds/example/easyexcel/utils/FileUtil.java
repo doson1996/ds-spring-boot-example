@@ -1,4 +1,4 @@
-package com.ds.example.easyexcle.utils;
+package com.ds.example.easyexcel.utils;
 
 import java.io.File;
 import java.io.InputStream;
