@@ -1,14 +1,22 @@
 package com.ds.example.easyexcel.model;
 
 import com.alibaba.excel.annotation.ExcelProperty;
+import com.alibaba.excel.annotation.write.style.ColumnWidth;
+import com.alibaba.excel.annotation.write.style.ContentRowHeight;
+import com.alibaba.excel.annotation.write.style.HeadRowHeight;
 
 import java.util.Date;
 
 /**
- * @Auther: ds
- * @Date: 2021/03/03 11:45
- * @Description:
+ * @Author ds
+ * @Date 2021/3/4 17:35
+ * @Version 1.0
+ * @Description
  */
+
+@ContentRowHeight(10)
+@HeadRowHeight(20)
+@ColumnWidth(25)
 public class DemoData {
 
     @ExcelProperty("字符串标题")
@@ -22,8 +30,6 @@ public class DemoData {
 
     @ExcelProperty("数字标题")
     private Double doubleData;
-
-
 
     public DemoData() {
     }

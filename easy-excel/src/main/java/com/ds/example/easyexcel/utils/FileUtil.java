@@ -4,10 +4,12 @@ import java.io.File;
 import java.io.InputStream;
 
 /**
- * @Auther: ds
- * @Date: 2021/03/03 11:45
- * @Description:
+ * @Author ds
+ * @Date 2021/3/4 17:35
+ * @Version 1.0
+ * @Description
  */
+
 public class FileUtil {
 
     public static InputStream getResourcesFileInputStream(String fileName) {
@@ -15,11 +17,9 @@ public class FileUtil {
     }
 
     public static String getPath() {
-        return "F:\\excel";
-        //return FileUtil.class.getResource("/").getPath();
+        //return "F:\\excel";
+        return FileUtil.class.getResource("/").getPath();
     }
-
-
 
     public static File createNewFile(String pathName) {
         File file = new File(getPath() + pathName);

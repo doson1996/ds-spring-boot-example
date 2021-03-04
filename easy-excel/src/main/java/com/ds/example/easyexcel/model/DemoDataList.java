@@ -1,10 +1,12 @@
 package com.ds.example.easyexcel.model;
 
 /**
- * @Auther: ds
- * @Date: 2021/03/03 11:45
- * @Description:
+ * @Author ds
+ * @Date 2021/3/4 17:35
+ * @Version 1.0
+ * @Description
  */
+
 public class DemoDataList{
 
     public DemoDataList() {
