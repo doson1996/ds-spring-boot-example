@@ -1,4 +1,4 @@
-package com.ds.example.easyexcel.model;
+package com.ds.example.nacos.easyexcel.model;
 
 import com.alibaba.excel.annotation.ExcelProperty;
 import com.alibaba.excel.annotation.write.style.ColumnWidth;

@@ -44,11 +44,13 @@
         <log4j.version>2.13.3</log4j.version>
         <slf4j-api.version>1.7.7</slf4j-api.version>
         <logback.version>1.2.3</logback.version>
+        <nacos-discovery-spring-boot.version>0.2.7</nacos-discovery-spring-boot.version>
     </properties>
 
     <modules>
         <module>common</module>
         <module>easy-excel</module>
+        <module>nacos</module>
     </modules>
 
     <dependencies>
@@ -82,12 +84,25 @@
                 <version>${project.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>example-nacos</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
 
             <!--easy excel  -->
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>easyexcel</artifactId>
                 <version>${easy-excel.version}</version>
+            </dependency>
+
+            <!--nacos -->
+            <dependency>
+                <groupId>com.alibaba.boot</groupId>
+                <artifactId>nacos-discovery-spring-boot-starter</artifactId>
+                <version>${nacos-discovery-spring-boot.version}</version>
             </dependency>
 
             <!-- Logging libs -->

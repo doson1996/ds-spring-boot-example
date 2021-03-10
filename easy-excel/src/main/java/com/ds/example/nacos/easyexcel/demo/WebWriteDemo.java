@@ -1,7 +1,7 @@
-package com.ds.example.easyexcel.demo;
+package com.ds.example.nacos.easyexcel.demo;
 
 import com.alibaba.excel.EasyExcel;
-import com.ds.example.easyexcel.model.DemoData;
+import com.ds.example.nacos.easyexcel.model.DemoData;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -1,19 +1,20 @@
-package com.ds.example.easyexcel;
+package com.ds.example.nacos;
+
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * @Author ds
- * @Date 2021/3/4 17:35
- * @Version 1.0
- * @Description
+ * @Date 2021/3/10 11:25
+ * @Description nacos spring boot 例子
  */
 
 @SpringBootApplication
-public class EasyExcelApplication {
+public class NacosApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(EasyExcelApplication.class,args);
+        SpringApplication.run(NacosApplication.class,args);
     }
+
 }
