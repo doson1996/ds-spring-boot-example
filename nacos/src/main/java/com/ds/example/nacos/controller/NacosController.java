@@ -19,9 +19,11 @@ public class NacosController {
 
     @GetMapping("echo")
     public Result echo(@RequestParam String msg){
+
         if(StringUtils.isEmpty(msg)){
             throw new IllegalArgumentException(ResultMsg.PARAMETER_ERROR_MSG);
         }
+
         return Result.ok(msg);
     }
 }
