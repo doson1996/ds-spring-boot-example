@@ -51,6 +51,7 @@
         <module>common</module>
         <module>easy-excel</module>
         <module>nacos</module>
+        <module>basic</module>
     </modules>
 
     <dependencies>
