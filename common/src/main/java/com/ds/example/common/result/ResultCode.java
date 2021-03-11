@@ -1,4 +1,4 @@
-package com.ds.common.result;
+package com.ds.example.common.result;
 
 /**
  * @Author ds

@@ -1,10 +1,11 @@
-package com.ds.common.exception;
+package com.ds.example.common.exception;
 
-import com.ds.common.result.Result;
-import com.ds.common.result.ResultMsg;
+import com.ds.example.common.result.Result;
+import com.ds.example.common.result.ResultMsg;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * @Author ds
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
  */
 
 @ControllerAdvice
+@ResponseBody
 public class GlobalExceptionHandler {
 
     /**
@@ -21,7 +23,7 @@ public class GlobalExceptionHandler {
      * @return
      */
     @ExceptionHandler(Exception.class)
-    public Result ExceptionHandler(Exception e){
+    public Result handlerException(Exception e){
         return new Result(HttpStatus.INTERNAL_SERVER_ERROR.value(),HttpStatus.INTERNAL_SERVER_ERROR.getReasonPhrase(),null);
     }
 
@@ -31,7 +33,7 @@ public class GlobalExceptionHandler {
      * @return
      */
     @ExceptionHandler(IllegalArgumentException.class)
-    public Result IllegalArgumentExceptionHandler(Exception e){
+    public Result handlerIllegalArgumentException(IllegalArgumentException e){
         return Result.fail(ResultMsg.PARAMETER_ERROR_MSG);
     }
 

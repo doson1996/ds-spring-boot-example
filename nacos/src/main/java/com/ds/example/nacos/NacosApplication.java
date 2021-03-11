@@ -10,7 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @Description nacos spring boot 例子
  */
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages ="com.ds.example")
 public class NacosApplication {
 
     public static void main(String[] args) {
