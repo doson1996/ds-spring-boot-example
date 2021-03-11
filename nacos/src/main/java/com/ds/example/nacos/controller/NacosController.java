@@ -21,7 +21,7 @@ public class NacosController {
     public Result echo(@RequestParam String msg){
 
         if(StringUtils.isEmpty(msg)){
-            throw new IllegalArgumentException(ResultMsg.PARAMETER_ERROR_MSG);
+            throw new IllegalArgumentException();
         }
 
         return Result.ok(msg);
