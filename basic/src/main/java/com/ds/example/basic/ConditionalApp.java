@@ -25,6 +25,11 @@ public class ConditionalApp {
         boolean tom = run.containsBean("tom");
         System.out.println("容器中有tom：" + tom);
 
+        boolean haha = run.containsBean("haha");
+        System.out.println("容器中有haha：" + haha);
+
+        boolean hehe = run.containsBean("hehe");
+        System.out.println("容器中有hehe：" + hehe);
 
 
     }

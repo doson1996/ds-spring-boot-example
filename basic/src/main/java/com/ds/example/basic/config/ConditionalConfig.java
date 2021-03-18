@@ -6,6 +6,8 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
+import org.springframework.context.annotation.ImportResource;
 
 /**
  * @Author ds
@@ -15,7 +17,8 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @ConditionalOnBean(value = {MyConfig.class}) //当存在MyConfig.class的时候才把ConditionalConfig注入到容器中
-//@ConditionalOnMissingBean(name = "tom1")
+//@ConditionalOnMissingBean(value = {MyConfig.class})
+@ImportResource(value = {"classpath:beans.xml"})
 public class ConditionalConfig {
 
     @Bean
