@@ -2,8 +2,10 @@ package com.ds.example.basic.config;
 
 import com.ds.example.basic.model.Cat;
 import com.ds.example.basic.model.User;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
 
 /**
  * @Author ds
@@ -15,7 +17,7 @@ import org.springframework.context.annotation.Configuration;
  *                        设置为false，不会去验证，加快spring boot的运行速度。           非单例                 配置类组件之间无依赖关系用Lite模式加速容器启动过程，减少判断
  *
  */
-
+@Import(value = {User.class})
 @Configuration(proxyBeanMethods = true)
 public class MyConfig {
 
