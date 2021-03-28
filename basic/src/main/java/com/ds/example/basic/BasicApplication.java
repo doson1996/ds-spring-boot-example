@@ -44,6 +44,12 @@ public class BasicApplication {
         Cat tom = run.getBean("tom", Cat.class);
         System.out.println(user01.getCat() == tom);
 
+        String[] beanNamesForType = run.getBeanNamesForType(User.class);
+        System.out.println("----------------");
+        for (String s : beanNamesForType) {
+            System.out.println(s);
+        }
+
     }
 
 }
