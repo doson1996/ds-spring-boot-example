@@ -45,14 +45,18 @@
         <slf4j-api.version>1.7.7</slf4j-api.version>
         <logback.version>1.2.3</logback.version>
         <nacos-discovery-spring-boot.version>0.2.7</nacos-discovery-spring-boot.version>
+        <mybatis-plus>3.4.1</mybatis-plus>
+        <lombok.version>1.18.20</lombok.version>
     </properties>
 
     <modules>
         <module>common</module>
         <module>easy-excel</module>
         <module>nacos</module>
+        <module>jvm</module>
         <module>basic</module>
         <module>feature</module>
+        <module>mybatis-plus</module>
     </modules>
 
     <dependencies>
@@ -105,6 +109,26 @@
                 <groupId>com.alibaba.boot</groupId>
                 <artifactId>nacos-discovery-spring-boot-starter</artifactId>
                 <version>${nacos-discovery-spring-boot.version}</version>
+            </dependency>
+
+            <!--mybatis-plus -->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis-plus}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-generator</artifactId>
+                <version>${mybatis-plus}</version>
+            </dependency>
+
+            <!--lombok -->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
             </dependency>
 
             <!-- Logging libs -->

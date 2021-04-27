@@ -26,4 +26,12 @@ public class NacosController {
 
         return Result.ok(msg);
     }
+
+    /**
+     * -XX:OnOutOfMemoryError=""
+     */
+    @GetMapping("sendMail")
+    public void sendMail(){
+        System.out.println("OOM sendMail--");
+    }
 }

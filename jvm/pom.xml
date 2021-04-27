@@ -11,10 +11,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>example-common</artifactId>
+    <artifactId>example-jvm</artifactId>
     <packaging>jar</packaging>
 
-    <name>example-common ${project.version}</name>
+    <name>example-jvm ${project.version}</name>
     <url>https://github.com/doson1996</url>
 
     <properties>
@@ -22,21 +22,14 @@
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
 
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>example-common</artifactId>
         </dependency>
 
     </dependencies>
+
+
 
 </project>
