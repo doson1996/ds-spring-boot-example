@@ -1,0 +1,10 @@
+server:
+  port: 8010
+
+base:
+  rocketmq: 47.98.217.92
+
+rocketmq:
+  name-server: ${base.rocketmq}:9876
+  producer:
+    group: my-group

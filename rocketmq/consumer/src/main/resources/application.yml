@@ -1,0 +1,8 @@
+server:
+  port: 8020
+
+base:
+  rocketmq: 47.98.217.92
+
+rocketmq:
+  name-server: ${base.rocketmq}:9876
