@@ -2,7 +2,7 @@ server:
   port: 8010
 
 base:
-  rocketmq: 47.98.217.92
+  rocketmq: dus.com
 
 rocketmq:
   name-server: ${base.rocketmq}:9876
