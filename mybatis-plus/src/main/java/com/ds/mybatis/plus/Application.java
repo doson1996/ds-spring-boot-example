@@ -14,7 +14,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 
 @SpringBootApplication
-@MapperScan(value = {"com.baomidou.mybatisplus.samples.quickstart.mapper", "com.ds.mybatis.plus.mapper"})
+@MapperScan(value = {"com.ds.mybatis.plus.mapper"})
 public class Application {
 
     public static void main(String[] args) {

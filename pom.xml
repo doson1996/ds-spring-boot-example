@@ -57,6 +57,7 @@
         <module>basic</module>
         <module>feature</module>
         <module>mybatis-plus</module>
+        <module>oauth2</module>
     </modules>
 
     <dependencies>
@@ -95,7 +96,6 @@
                 <artifactId>example-nacos</artifactId>
                 <version>${project.version}</version>
             </dependency>
-
 
             <!--easy excel  -->
             <dependency>
